@@ -10,7 +10,8 @@ class Dog
   end
 
   def self.clear_all
-    self.clear_all
+    @@all.each do | dog |
+      dog.clear_all
   end
 
   def self.all
